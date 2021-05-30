@@ -1,15 +1,15 @@
 # Проект Сервиса Note
 
 ## Реализованы:
-* data class Comment
-* data class Note
-* синглтон NoteService
+* data class Comment и data class Note
+* interface CRUDservice 
+* синглтоны NoteService и CommentService реализующие CRUDservice
 
-## В NoteService реализованы методы:
+## В синглтонах реализованы методы:
 * clear() для очистки данных синглтона перед тестом
 * getNotes и getComments для доступа к приватным полям
 * CRUD методы для дата классов с выбросом исключений
 
-## Так же реализованы 29 автотестов для проверки методов
+## Так же реализованы 36 автотестов для проверки методов
 
-### поле guid в методе createComment пропущено по причине неясного назначения
+### поле guid в методе CommentService.add() пропущено по причине неясного назначения
